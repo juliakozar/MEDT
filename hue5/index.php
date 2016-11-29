@@ -1,7 +1,7 @@
 <html>
   <head>
   	<meta charset="UTF-8">
-	<title>HTML mit Style</title>
+	<title>Beispiel 1</title>
 	<style>
 		li{
 			list-style-type: none;
@@ -23,10 +23,10 @@
 		<p> Ihre Eingabe als Liste: </p>
 		<?php
 			$text = $_POST['eingabe'];
-		?>
-			<?php
-				if(isset($_POST['explodeBtn'])){ ?>
-					<?php
+		
+			
+				if(isset($_POST['explodeBtn'])){ 
+					
 						$Array = explode(" ",$text);
 						echo "<ul>";
 						foreach($Array as $item)
@@ -34,7 +34,7 @@
 							echo "<li>$item</li>";
 						}
 						echo "</ul>";
-					?>
-		<?php } ?>
+					
+		 } ?>
   </body>
 </html>
